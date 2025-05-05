@@ -135,4 +135,75 @@ header {
     color: #3a1f0f;
     border-top: 2px solid #d7b59c;
   }
+  .classes {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .class-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .class-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .class-item img {
+    width: 140px;
+    height: auto;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+  
+  .class-text {
+    flex: 1;
+    font-size: 0.95rem;
+    color: #3a1f0f;
+  }
+  
+  .class-text h3 {
+    font-size: 1rem;
+    color: #900;
+    margin: 0 0 0.5rem;
+  }
+  
+  .class-text p {
+    margin: 0.3rem 0;
+    line-height: 1.4;
+  }
+  
+  .class-text strong {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #3a1f0f;
+  }
+  
+  .subclass-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.3rem;
+  }
+  
+  .subclass-list li {
+    position: relative;
+    padding-left: 1.3rem;
+    margin-bottom: 0.2rem;
+    color: #900;
+    font-size: 0.95rem;
+  }
+  
+  .subclass-list li::before {
+    content: "♦";
+    position: absolute;
+    left: 0;
+    color: #c00;
+    font-size: 0.8rem;
+    top: 0;
+  }
   
