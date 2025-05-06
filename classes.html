@@ -1,105 +1,136 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D&DAW - Clases</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <img src="images/D&DAW-logo.webp" alt="D&DAW Logo" class="logo">
-      <ul class="nav-menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="classes.html">Clases</a></li>
-      </ul>
-    </nav>
-  </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&DAW - Clases</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/webp" href="images/D&DAW-logo.webp" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <nav>
+          <img src="images/D&DAW-logo.webp" alt="D&DAW Logo" class="logo" />
+          <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+              <a href="classes.html">Clases</a>
+              <ul class="dropdown-menu">
+                <li><a href="barbarian.html">Barbarian</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-  <main>
-    <section class="hero">
-        <h1>Character <span class="highlight">Classes</span></h1>
-    </section>
-    
-    <section class="section">
-        <p>Character class provides a character’s most exciting capabilities. This chapter offers twelve classes, each of which contains four subclasses—all summarized below.</p>
-        <img src="images/classes.avif" alt="Dragon encounter" class="main-image" />
-        <p class="image-caption">The heroes Mercion, Molliver, Strongheart, and Ringlerun protect a portal to another plane from diabolical invaders</p>
-      </section>
-  
-      
-      <section class="classes">
-        <div class="class-list">
-      
-          <div class="class-item left">
-            <img src="images/barbarian-symbol.avif" alt="Barbarian">
-            <div class="class-text">
-              <h3>Barbarian</h3>
-              <p><strong>Barbarian.</strong> Storm with Rage, and wade into hand-to-hand combat. Then follow the Path of the…</p>
-              <p><strong>Barbarian Subclasses</strong></p>
-              <ul class="subclass-list">
-                <li>Berserker to unleash raw violence.</li>
-                <li>Wild Heart to manifest kinship with animals.</li>
-                <li>World Tree to tap into cosmic vitality.</li>
-                <li>Zealot to rage in union with a god.</li>
-              </ul>
-            </div>
-          </div>
-      
-          <div class="class-item right">
-            <div class="class-text">
-              <h3>Bard</h3>
-              <p><strong>Bard.</strong> Perform spells that inspire and heal allies or beguile foes. Then join the College of…</p>
-              <p><strong>Bard Subclasses</strong></p>
-              <ul class="subclass-list">
-                <li>Dance to harness agility in battle.</li>
-                <li>Glamour to weave beguiling Feywild magic.</li>
-                <li>Lore to collect knowledge and magical secrets.</li>
-                <li>Valor to wield weapons with spells.</li>
-              </ul>
-            </div>
-            <img src="images/bard-symbol.avif" alt="Bard">
-          </div>
-      
-          <div class="class-item left">
-            <img src="images/cleric-symbol.avif" alt="Cleric">
-            <div class="class-text">
-              <h3>Cleric</h3>
-              <p><strong>Cleric.</strong> Invoke divine magic to heal, bolster, and smite. Then harness the…</p>
-              <p><strong>Cleric Subclasses</strong></p>
-              <ul class="subclass-list">
-                <li>Life Domain to be a master of healing.</li>
-                <li>Light Domain to wield searing, warding light.</li>
-                <li>Trickery Domain to bedevil foes with mischief.</li>
-                <li>War Domain to inspire valor and chastise foes.</li>
-              </ul>
-            </div>
-          </div>
-      
-          <div class="class-item right">
-            <div class="class-text">
-              <h3>Wizard</h3>
-              <p><strong>Wizard.</strong> Study arcane magic and master spells for every purpose. Then embody the…</p>
-              <p><strong>Wizard Subclasses</strong></p>
-              <ul class="subclass-list">
-                <li>Abjurer to shield allies and banish foes.</li>
-                <li>Diviner to learn the multiverse’s secrets.</li>
-                <li>Evoker to create explosive effects.</li>
-                <li>Illusionist to weave spells of deception.</li>
-              </ul>
-            </div>
-            <img src="images/wizard-symbol.avif" alt="Wizard">
-          </div>
-      
-        </div>
-      </section>
-      
-      
-  </main>
+      <main>
+        <p class="breadcrumb">
+          <a href="index.html"><strong>Home</strong></a> &gt;
+          <a href="classes.html"><strong>Classes</strong></a>
+        </p>
 
-  <footer>
-    <p>&copy; 2025 D&DAW. Todos los derechos reservados.</p>
-  </footer>
-</body>
+        <section class="hero">
+          <h1>Character <span class="highlight">Classes</span></h1>
+        </section>
+
+        <section class="section">
+          <p>
+            Character class provides a character’s most exciting capabilities.
+            This chapter offers twelve classes, each of which contains four
+            subclasses—all summarized below.
+          </p>
+          <img
+            src="images/classes.avif"
+            alt="Dragon encounter"
+            class="main-image"
+          />
+          <p class="image-caption">
+            The heroes Mercion, Molliver, Strongheart, and Ringlerun protect a
+            portal to another plane from diabolical invaders
+          </p>
+        </section>
+
+        <section class="classes">
+          <div class="class-list">
+            <div class="class-item left">
+              <img src="images/barbarian-symbol.avif" alt="Barbarian" />
+              <div class="class-text">
+                <h3>Barbarian</h3>
+                <p>
+                  <strong>Barbarian.</strong> Storm with Rage, and wade into
+                  hand-to-hand combat. Then follow the Path of the…
+                </p>
+                <p><strong>Barbarian Subclasses</strong></p>
+                <ul class="subclass-list">
+                  <li>Berserker to unleash raw violence.</li>
+                  <li>Wild Heart to manifest kinship with animals.</li>
+                  <li>World Tree to tap into cosmic vitality.</li>
+                  <li>Zealot to rage in union with a god.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="class-item right">
+              <div class="class-text">
+                <h3>Bard</h3>
+                <p>
+                  <strong>Bard.</strong> Perform spells that inspire and heal
+                  allies or beguile foes. Then join the College of…
+                </p>
+                <p><strong>Bard Subclasses</strong></p>
+                <ul class="subclass-list">
+                  <li>Dance to harness agility in battle.</li>
+                  <li>Glamour to weave beguiling Feywild magic.</li>
+                  <li>Lore to collect knowledge and magical secrets.</li>
+                  <li>Valor to wield weapons with spells.</li>
+                </ul>
+              </div>
+              <img src="images/bard-symbol.avif" alt="Bard" />
+            </div>
+
+            <div class="class-item left">
+              <img src="images/cleric-symbol.avif" alt="Cleric" />
+              <div class="class-text">
+                <h3>Cleric</h3>
+                <p>
+                  <strong>Cleric.</strong> Invoke divine magic to heal, bolster,
+                  and smite. Then harness the…
+                </p>
+                <p><strong>Cleric Subclasses</strong></p>
+                <ul class="subclass-list">
+                  <li>Life Domain to be a master of healing.</li>
+                  <li>Light Domain to wield searing, warding light.</li>
+                  <li>Trickery Domain to bedevil foes with mischief.</li>
+                  <li>War Domain to inspire valor and chastise foes.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="class-item right">
+              <div class="class-text">
+                <h3>Wizard</h3>
+                <p>
+                  <strong>Wizard.</strong> Study arcane magic and master spells
+                  for every purpose. Then embody the…
+                </p>
+                <p><strong>Wizard Subclasses</strong></p>
+                <ul class="subclass-list">
+                  <li>Abjurer to shield allies and banish foes.</li>
+                  <li>Diviner to learn the multiverse’s secrets.</li>
+                  <li>Evoker to create explosive effects.</li>
+                  <li>Illusionist to weave spells of deception.</li>
+                </ul>
+              </div>
+              <img src="images/wizard-symbol.avif" alt="Wizard" />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 D&DAW. Todos los derechos reservados.</p>
+      </footer>
+    </div>
+  </body>
 </html>

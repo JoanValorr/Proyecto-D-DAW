@@ -1,8 +1,16 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #fff8f1;
+    background-color: #121212;
     color: #3a1f0f;
+  }
+  
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff8f1;
+    padding: 2rem;
+    min-height: 100vh;
   }
   /* Header */
 header {
@@ -41,7 +49,7 @@ header {
   }
   
   .nav-menu li a:hover {
-    color: #900;
+    color: #001a57;
   }
   
   main {
@@ -56,7 +64,7 @@ header {
   }
   
   .highlight {
-    color: #900;
+    color: #001a57;
   }
   
   .section {
@@ -74,7 +82,7 @@ header {
     text-align: center;
     font-style: italic;
     background-color: #fff1e6;
-    border-left: 3px solid #900;
+    border-left: 3px solid #001a57;
     padding: 0.5rem 1rem;
     margin-top: -1rem;
   }
@@ -89,7 +97,7 @@ header {
   }
   
   .ability-list span {
-    color: #900;
+    color: #001a57;
     font-weight: bold;
   }
   
@@ -119,7 +127,7 @@ header {
   .signup button {
     margin-top: 1.5rem;
     padding: 0.75rem;
-    background-color: #900;
+    background-color: #001a57;
     color: white;
     border: none;
     border-radius: 4px;
@@ -167,7 +175,7 @@ header {
   
   .class-text h3 {
     font-size: 1rem;
-    color: #900;
+    color: #001a57;
     margin: 0 0 0.5rem;
   }
   
@@ -193,7 +201,7 @@ header {
     position: relative;
     padding-left: 1.3rem;
     margin-bottom: 0.2rem;
-    color: #900;
+    color: #001a57;
     font-size: 0.95rem;
   }
   
@@ -201,8 +209,107 @@ header {
     content: "♦";
     position: absolute;
     left: 0;
-    color: #c00;
+    color: #001a57;
     font-size: 0.8rem;
     top: 0;
   }
+  /* Submenú dropdown para clases */
+.nav-menu .dropdown {
+    position: relative;
+  }
   
+  .nav-menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff1e6;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+    border: 1px solid #d7b59c;
+    z-index: 1000;
+    min-width: 160px;
+  }
+  
+  .nav-menu .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #3a1f0f;
+    font-weight: 500;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #f4e3d3;
+    color: #001a57;
+  }
+  .page-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #001a57;
+  }
+  
+  .breadcrumb {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: #555;
+  }
+  
+  .with-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+    flex-direction: row; /* Asegura que la imagen esté a la izquierda */
+  }
+  
+  .with-image img.side-image {
+    order: 0; /* Imagen primero */
+  }
+  
+  .with-image > div {
+    flex: 1; /* Hace que el texto ocupe el resto del ancho */
+  }
+  
+  .side-image {
+    width: 200px;
+    border-radius: 6px;
+  }
+  
+  .table-container {
+    flex: 1;
+  }
+  
+  .traits-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff8f1;
+  }
+  
+  .traits-table th {
+    background-color: #001a57;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .traits-table td {
+    border: 1px solid #d7b59c;
+    padding: 0.5rem;
+    vertical-align: top;
+  }
+  a {
+    text-decoration: none;
+    color: inherit; /* o un color específico como #fff */
+  }
+  
+  a:hover {
+    color: #001a57; /* ejemplo de color al pasar el mouse */
+  }
+
