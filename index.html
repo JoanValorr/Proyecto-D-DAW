@@ -8,63 +8,70 @@
     <link rel="icon" type="image/webp" href="images/D&DAW-logo.webp" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link" tabindex="1">Skip to main content</a>
+
     <div class="page">
       <header>
         <nav>
+          <a href="index.html" tabindex="2">
             <img src="images/D&DAW-logo.webp" alt="D&DAW Logo" class="logo" />
-            <ul class="nav-menu">
-              <li><a href="index.html">Inicio</a></li>
-              <li class="dropdown">
-                <a href="classes.html">Clases</a>
-                <ul class="dropdown-menu">
-                  <li><a href="barbarian.html">Barbarian</a></li>
-                  <li><a href="#">Bard</a></li>
-                  <li><a href="#">Cleric</a></li>
-                  <li><a href="wizard.html">Wizard</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
+          </a>
+          <ul class="nav-menu">
+            <li><a href="index.html" tabindex="3">Inicio</a></li>
+            <li class="dropdown">
+              <a href="classes.html" tabindex="4">Clases</a>
+              <ul class="dropdown-menu">
+                <li><a href="barbarian.html" tabindex="5">Barbarian</a></li>
+                <li><a href="#" tabindex="6">Bard</a></li>
+                <li><a href="#" tabindex="7">Cleric</a></li>
+                <li><a href="wizard.html" tabindex="8">Wizard</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </header>
 
-      <main>
+      <main id="main-content">
         <section class="hero">
-          <h1>Discover the <span class="highlight">D&DAW</span></h1>
+          <h1 tabindex="9">Discover the <span class="highlight">D&DAW</span></h1>
         </section>
 
         <section class="section">
-          <h2>Playing the Game</h2>
-          <p>
-            Imagination is a key ingredient of Dungeons & Dragons, a cooperative
-            game in which the characters that you roleplay embark on adventures
-            together in fantasy worlds filled with monsters and magic.
-          </p>
-          <p>
-            In <strong>D&DAW</strong>, the action takes place in the
-            imaginations of the players, and it’s narrated by everyone together.
-          </p>
+          <div tabindex="10">
+            <h2>Playing the Game</h2>
+            <p>
+              Imagination is a key ingredient of Dungeons & Dragons, a cooperative
+              game in which the characters that you roleplay embark on adventures
+              together in fantasy worlds filled with monsters and magic.
+            </p>
+            <p>
+              In <strong>D&DAW</strong>, the action takes place in the
+              imaginations of the players, and it’s narrated by everyone together.
+            </p>
+          </div>
           <img
             src="/images/opening-art.avif"
             alt="Dragon encounter"
             class="main-image"
+            tabindex="11"
           />
-          <p class="image-caption">
+          <p class="image-caption" tabindex="12">
             While adventuring in the Dragonlance setting, the siblings Caramon
             Majere, Raistlin Majere, and Kitiara uth Matar provoke the rage of a
             wyvern
           </p>
         </section>
 
-        <section class="section">
-          <h2>Adventures</h2>
-          <p>
+        <section class="section" tabindex="13">
+          <h2 >Adventures</h2>
+          <p >
             An adventure might be created by the Dungeon Master or purchased
             (the examples of play in this chapter are inspired by a published
             adventure, <em>Curse of Strahd</em>). In either case, an adventure
             features a fantastic setting, such as an underground dungeon, a
             wondrous wilderness, or a magic-filled city.
           </p>
-          <p>
+          <p >
             During an adventure, the adventurers explore environments, events,
             and creatures presented by the DM. Battles, traps, negotiations,
             mysteries, and more arise during these explorations.
@@ -78,13 +85,13 @@
         </section>
 
         <section class="section">
-          <h2>Ability Checks</h2>
-          <p>
+          <h2 tabindex="14">Ability Checks</h2>
+          <p tabindex="15">
             An ability check represents a creature using talent and training to
             try to overcome a challenge, such as forcing open a stuck door,
             picking a lock, entertaining a crowd, or deciphering a cipher.
           </p>
-          <p>
+          <p tabindex="16">
             The DM and the rules often call for an ability check when a creature
             attempts something other than an attack that has a chance of
             meaningful failure. When the outcome is uncertain and narratively
@@ -94,28 +101,22 @@
             src="/images/d20-test.avif"
             alt="Dice and characters"
             class="main-image"
+            tabindex="17"
           />
 
-          <h3>Ability Check Examples</h3>
-          <ul class="ability-list">
-            <li>
-              <span>♦ Strength:</span> Lift, push, pull, or break something
-            </li>
+          <h3 tabindex="18">Ability Check Examples</h3>
+          <ul class="ability-list" >
+            <li><span>♦ Strength:</span> Lift, push, pull, or break something</li>
             <li><span>♦ Dexterity:</span> Move nimbly, quickly, or quietly</li>
-            <li>
-              <span>♦ Constitution:</span> Push your body beyond normal limits
-            </li>
+            <li><span>♦ Constitution:</span> Push your body beyond normal limits</li>
             <li><span>♦ Intelligence:</span> Reason or remember</li>
-            <li>
-              <span>♦ Wisdom:</span> Notice things in the environment or in
-              creatures’ behavior
-            </li>
+            <li><span>♦ Wisdom:</span> Notice things in the environment or in creatures’ behavior</li>
             <li><span>♦ Charisma:</span> Influence, entertain, or deceive</li>
           </ul>
         </section>
 
         <section class="signup">
-          <h2>
+          <h2 tabindex="19">
             Sign Up for the <span class="highlight">D&DAW</span> Community
           </h2>
           <form>
@@ -125,6 +126,7 @@
               id="username"
               placeholder="Enter your username."
               required
+              tabindex="20"
             />
 
             <label for="email">Email Address:</label>
@@ -133,15 +135,16 @@
               id="email"
               placeholder="you@email.com"
               required
+              tabindex="21"
             />
 
-            <button type="submit">Submit</button>
+            <button type="submit" tabindex="22">Submit</button>
           </form>
         </section>
       </main>
 
       <footer>
-        <p>©2025 <strong>D&DAW</strong>. All rights reserved.</p>
+        <p tabindex="23">©2025 <strong>D&DAW</strong>. All rights reserved.</p>
       </footer>
     </div>
   </body>

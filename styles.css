@@ -73,7 +73,7 @@ header {
   
   .main-image {
     display: block;
-    width: 100%;
+    width: 80%;
     margin: 1rem auto;
     border-radius: 4px;
   }
@@ -248,6 +248,29 @@ header {
     background-color: #f4e3d3;
     color: #001a57;
   }
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 100;
+    transition: top 0.3s;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
+  /* Mostrar al hacer hover (mouse) o focus (teclado) */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+/* Asegurar que los links sean visibles al tabular */
+.dropdown-menu a:focus {
+  outline: 2px solid #333; /* Visibilidad al navegar por teclado */
+}
   .page-title {
     font-size: 3rem;
     text-align: center;
@@ -313,3 +336,68 @@ header {
     color: #001a57; /* ejemplo de color al pasar el mouse */
   }
 
+/**
+ * Responsive Styles
+ */
+
+ @media screen and (max-width: 768px) {
+  .with-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .with-image img.side-image {
+    display: block;
+    margin: 1.5rem auto;
+    width: 85%;
+    max-width: 320px;
+    height: auto;
+    order: 0;
+  }
+  
+
+  .with-image > div {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .main-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .traits-table {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+
+  .traits-table th,
+  .traits-table td {
+    padding: 0.4rem;
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .page {
+    padding: 1rem;
+  }
+ .dropdown-menu {
+    position: static;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .dropdown:hover .dropdown-menu,
+  .dropdown:focus-within .dropdown-menu {
+    display: block;
+  }
+}

@@ -11,34 +11,37 @@
     <div class="page">
       <header>
         <nav>
-          <img src="images/D&DAW-logo.webp" alt="D&DAW Logo" class="logo" />
+          <a href="index.html" tabindex="1">
+            <img src="images/D&DAW-logo.webp" alt="D&DAW Logo" class="logo" />
+          </a>
           <ul class="nav-menu">
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html" tabindex="2">Inicio</a></li>
             <li class="dropdown">
-              <a href="classes.html">Clases</a>
+              <a href="classes.html" tabindex="3">Clases</a>
               <ul class="dropdown-menu">
-                <li><a href="barbarian.html">Barbarian</a></li>
-                <li><a href="#">Bard</a></li>
-                <li><a href="#">Cleric</a></li>
-                <li><a href="wizard.html">Wizard</a></li>
+                <li><a href="barbarian.html" tabindex="4">Barbarian</a></li>
+                <li><a href="#" tabindex="5">Bard</a></li>
+                <li><a href="#" tabindex="6">Cleric</a></li>
+                <li><a href="wizard.html" tabindex="7">Wizard</a></li>
               </ul>
             </li>
           </ul>
         </nav>
       </header>
+
       <main>
         <p class="breadcrumb">
-          <a href="index.html"><strong>Home</strong></a> &gt;
-          <a href="classes.html"><strong>Classes</strong></a> &gt;
-          <strong>Barbarian</strong>
+          <a href="index.html" tabindex="8"><strong>Home</strong></a> &gt;
+          <a href="classes.html" tabindex="9"><strong>Classes</strong></a> &gt;
+          <strong tabindex="10">Barbarian</strong>
         </p>
 
         <section class="hero">
-            <h1><span class="highlight">Barbarian</span></h1>
-          </section>
+          <h1 tabindex="11"><span class="highlight">Barbarian</span></h1>
+        </section>
 
-        <section class="section">
-          <h2>Becoming a Barbarian...</h2>
+        <section class="section" tabindex="12">
+          <h2 >Becoming a Barbarian...</h2>
           <p>
             Barbarians are mighty warriors who are powered by primal forces of
             the multiverse that manifest as a Rage. More than a mere emotion—and
@@ -51,16 +54,18 @@
           src="images/barbarian-opening-art.avif"
           alt="A Fierce Warrior"
           class="main-image"
+          tabindex="13"
         />
-        <p class="image-caption">A Fierce Warrior of Primal Rage</p>
+        <p class="image-caption" tabindex="14">A Fierce Warrior of Primal Rage</p>
 
         <section class="section with-image card-section">
           <img
             src="images/barbarian.avif"
             alt="Raging Barbarian"
             class="side-image framed"
+            tabindex="15"
           />
-          <div>
+          <div tabindex="16">
             <h2>Barbarian Class Features</h2>
             <p>
               Some Barbarians personify their Rage as a fierce spirit or revered
@@ -93,7 +98,7 @@
         </section>
 
         <section class="section with-image card-section">
-          <div class="table-container">
+          <div class="table-container" tabindex="17">
             <h2>Core Traits</h2>
             <table class="traits-table">
               <thead>
@@ -140,12 +145,13 @@
             src="images/champion.avif"
             alt="Barbarian Gear"
             class="side-image framed"
+            tabindex="18"
           />
         </section>
       </main>
 
       <footer>
-        <p>
+        <p tabindex="19">
           &copy; 2025 <strong>D&DAW</strong>. Todos los derechos reservados.
         </p>
       </footer>

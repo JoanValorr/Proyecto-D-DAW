@@ -11,16 +11,18 @@
     <div class="page">
       <header>
         <nav>
-          <img src="images/D&DAW-logo.webp" alt="D&DAW Logo" class="logo" />
+          <a href="index.html" tabindex="1">
+            <img src="images/D&DAW-logo.webp" alt="D&DAW Logo" class="logo" />
+          </a>
           <ul class="nav-menu">
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html" tabindex="2">Inicio</a></li>
             <li class="dropdown">
-              <a href="classes.html">Clases</a>
+              <a href="classes.html" tabindex="3">Clases</a>
               <ul class="dropdown-menu">
-                <li><a href="barbarian.html">Barbarian</a></li>
-                <li><a href="#">Bard</a></li>
-                <li><a href="#">Cleric</a></li>
-                <li><a href="wizard.html">Wizard</a></li>
+                <li><a href="barbarian.html" tabindex="4">Barbarian</a></li>
+                <li><a href="#" tabindex="5">Bard</a></li>
+                <li><a href="#" tabindex="6">Cleric</a></li>
+                <li><a href="wizard.html" tabindex="7">Wizard</a></li>
               </ul>
             </li>
           </ul>
@@ -29,16 +31,16 @@
 
       <main>
         <p class="breadcrumb">
-          <a href="index.html"><strong>Home</strong></a> &gt;
-          <a href="classes.html"><strong>Classes</strong></a>
+          <a href="index.html" tabindex="8"><strong>Home</strong></a> &gt;
+          <a href="classes.html" tabindex="9"><strong>Classes</strong></a>
         </p>
 
         <section class="hero">
-          <h1>Character <span class="highlight">Classes</span></h1>
+          <h1 tabindex="10">Character <span class="highlight">Classes</span></h1>
         </section>
 
         <section class="section">
-          <p>
+          <p tabindex="11">
             Character class provides a character’s most exciting capabilities.
             This chapter offers twelve classes, each of which contains four
             subclasses—all summarized below.
@@ -47,8 +49,9 @@
             src="images/classes.avif"
             alt="Dragon encounter"
             class="main-image"
+            tabindex="12"
           />
-          <p class="image-caption">
+          <p class="image-caption" tabindex="13">
             The heroes Mercion, Molliver, Strongheart, and Ringlerun protect a
             portal to another plane from diabolical invaders
           </p>
@@ -56,9 +59,10 @@
 
         <section class="classes">
           <div class="class-list">
+
             <div class="class-item left">
-              <img src="images/barbarian-symbol.avif" alt="Barbarian" />
-              <div class="class-text">
+              <img src="images/barbarian-symbol.avif" alt="Barbarian" tabindex="14" />
+              <div class="class-text" tabindex="15">
                 <h3>Barbarian</h3>
                 <p>
                   <strong>Barbarian.</strong> Storm with Rage, and wade into
@@ -75,7 +79,7 @@
             </div>
 
             <div class="class-item right">
-              <div class="class-text">
+              <div class="class-text" tabindex="16">
                 <h3>Bard</h3>
                 <p>
                   <strong>Bard.</strong> Perform spells that inspire and heal
@@ -89,12 +93,12 @@
                   <li>Valor to wield weapons with spells.</li>
                 </ul>
               </div>
-              <img src="images/bard-symbol.avif" alt="Bard" />
+              <img src="images/bard-symbol.avif" alt="Bard" tabindex="17" />
             </div>
 
             <div class="class-item left">
-              <img src="images/cleric-symbol.avif" alt="Cleric" />
-              <div class="class-text">
+              <img src="images/cleric-symbol.avif" alt="Cleric" tabindex="18" />
+              <div class="class-text" tabindex="19">
                 <h3>Cleric</h3>
                 <p>
                   <strong>Cleric.</strong> Invoke divine magic to heal, bolster,
@@ -111,7 +115,7 @@
             </div>
 
             <div class="class-item right">
-              <div class="class-text">
+              <div class="class-text" tabindex="20">
                 <h3>Wizard</h3>
                 <p>
                   <strong>Wizard.</strong> Study arcane magic and master spells
@@ -125,14 +129,15 @@
                   <li>Illusionist to weave spells of deception.</li>
                 </ul>
               </div>
-              <img src="images/wizard-symbol.avif" alt="Wizard" />
+              <img src="images/wizard-symbol.avif" alt="Wizard" tabindex="21" />
             </div>
+
           </div>
         </section>
       </main>
 
       <footer>
-        <p>&copy; 2025 D&DAW. Todos los derechos reservados.</p>
+        <p tabindex="22">&copy; 2025 D&DAW. Todos los derechos reservados.</p>
       </footer>
     </div>
   </body>
